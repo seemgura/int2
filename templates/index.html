@@ -1,0 +1,25 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos de Interiorismo</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Estilos de Interiorismo</h1>
+    </header>
+    <main>
+        {% for estilo in estilos %}
+        <section>
+            <h2>{{ estilo[1] }}</h2>
+            <p>{{ estilo[2] }}</p>
+            <iframe width="560" height="315" src="{{ estilo[3] }}" frameborder="0" allowfullscreen></iframe>
+            <img src="{{ estilo[4] }}" alt="Imagen de {{ estilo[1] }}">
+        </section>
+        {% endfor %}
+    </main>
+</body>
+</html>
