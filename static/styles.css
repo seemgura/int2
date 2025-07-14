@@ -2,72 +2,90 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
 
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    background: #f4f4f4;
+    font-family: 'Poppins', sans-serif;
+    background-color: #f4f6f8;
     color: #333;
 }
 
-header {
-    background: linear-gradient(90deg, #2c3e50, #4ca1af);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    animation: slideDown 1s ease-out;
+nav {
+    background: #1a1a1a;
+    padding: 1rem 2rem;
 }
 
-h1 {
-    font-size: 2.5rem;
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
     margin: 0;
 }
 
-main {
-    padding: 2rem;
-    display: grid;
-    gap: 2rem;
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
 }
 
-section {
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.hero {
+    background: linear-gradient(135deg, #2c3e50, #4ca1af);
+    color: white;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.card {
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
 }
 
-section:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+.card:hover {
+    transform: translateY(-5px);
 }
 
-h2 {
-    color: #2c3e50;
+.card h3 {
     margin-top: 0;
+    color: #2c3e50;
 }
 
 iframe, img {
     width: 100%;
-    max-width: 560px;
     border-radius: 8px;
     margin-top: 1rem;
 }
 
-@keyframes slideDown {
-    from {
-        transform: translateY(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+.about {
+    padding: 2rem;
+    text-align: center;
 }
 
-@media (max-width: 768px) {
-    iframe, img {
-        max-width: 100%;
-        height: auto;
-    }
+footer {
+    background: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
 }
