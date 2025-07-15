@@ -4,12 +4,12 @@
 body {
     margin: 0;
     font-family: 'Poppins', sans-serif;
-    background-color: #f4f6f8;
-    color: #333;
+    background-color: #F2F2F2;
+    color: #000000;
 }
 
 nav {
-    background: #1a1a1a;
+    background: #B6B09F;
     padding: 1rem 2rem;
 }
 
@@ -20,7 +20,7 @@ nav {
 }
 
 .logo {
-    color: #fff;
+    color: #000000;
     margin: 0;
 }
 
@@ -31,14 +31,14 @@ nav {
 }
 
 .nav-links li a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     font-weight: 500;
 }
 
 .hero {
-    background: linear-gradient(135deg, #2c3e50, #4ca1af);
-    color: white;
+    background: #EAE4D5;
+    color: #000000;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -59,7 +59,7 @@ nav {
     background: white;
     border-radius: 12px;
     padding: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.08);
     transition: transform 0.3s;
 }
 
@@ -69,7 +69,7 @@ nav {
 
 .card h3 {
     margin-top: 0;
-    color: #2c3e50;
+    color: #000000;
 }
 
 iframe, img {
@@ -81,11 +81,12 @@ iframe, img {
 .about {
     padding: 2rem;
     text-align: center;
+    background: #EAE4D5;
 }
 
 footer {
-    background: #1a1a1a;
-    color: white;
+    background: #B6B09F;
+    color: #000000;
     text-align: center;
     padding: 1rem;
 }
